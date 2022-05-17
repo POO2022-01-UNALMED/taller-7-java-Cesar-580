@@ -48,7 +48,28 @@ public class Libro extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 	
+	// Metodos
 	
+	// - palabrasTotales
+	public int palabrasTotales(int parametro) {
+		return 2*(this.getPaginas())*parametro;
+	}
+	
+	// - interpretacion
+	public String interpretacion() {
+		return this.interpretacion;
+	}
+	
+	// - toString()
+	public String toString() {
+		return    this.getOrigen()+"\n"
+				+ this.getTitulo()+"\n"
+				+ this.getAutor()+"\n"
+				+ this.getPaginas()+"\n"
+				+ this.getCo_autor()+"\n"
+				+ this.getEditorial()+"\n"
+				+ this.getEdicion()+"\n";
+	}
 	
 	
 }
